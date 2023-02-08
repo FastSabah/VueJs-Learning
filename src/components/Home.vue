@@ -5,6 +5,13 @@
 <UserF :data = "item" :getData="getData" />
 </li>
 </ul>
+<h1>{{ text }}</h1>
+<div v-html="tag">
+
+</div>
+<div v-html="tag2">
+
+</div>
 </template>
 
 <script>
@@ -32,7 +39,10 @@ return {
             name: "farah",
             email: "farah@test.com"
         },
-    ]
+    ],
+    text:"This is simple Text",
+    tag:"<h1>This is my first Heading</h1>",
+    tag2:"<h3>This is my second Heading</h3>"
 }
 },
 methods:{
